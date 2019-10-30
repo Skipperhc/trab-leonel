@@ -1,0 +1,10 @@
+C:\Users\pedro\OneDrive - Complexo de Ensino Superior do Brasil LTDA\Programacao\Avaliações\2Bim\Trabalho2Bim\Trabalho2Bim\bin\Debug\Trabalho2Bim.exe.config
+C:\Users\pedro\OneDrive - Complexo de Ensino Superior do Brasil LTDA\Programacao\Avaliações\2Bim\Trabalho2Bim\Trabalho2Bim\bin\Debug\Trabalho2Bim.exe
+C:\Users\pedro\OneDrive - Complexo de Ensino Superior do Brasil LTDA\Programacao\Avaliações\2Bim\Trabalho2Bim\Trabalho2Bim\bin\Debug\Trabalho2Bim.pdb
+C:\Users\pedro\OneDrive - Complexo de Ensino Superior do Brasil LTDA\Programacao\Avaliações\2Bim\Trabalho2Bim\Trabalho2Bim\obj\Debug\Trabalho2Bim.csprojAssemblyReference.cache
+C:\Users\pedro\OneDrive - Complexo de Ensino Superior do Brasil LTDA\Programacao\Avaliações\2Bim\Trabalho2Bim\Trabalho2Bim\obj\Debug\Trabalho2Bim.Form1.resources
+C:\Users\pedro\OneDrive - Complexo de Ensino Superior do Brasil LTDA\Programacao\Avaliações\2Bim\Trabalho2Bim\Trabalho2Bim\obj\Debug\Trabalho2Bim.Properties.Resources.resources
+C:\Users\pedro\OneDrive - Complexo de Ensino Superior do Brasil LTDA\Programacao\Avaliações\2Bim\Trabalho2Bim\Trabalho2Bim\obj\Debug\Trabalho2Bim.csproj.GenerateResource.cache
+C:\Users\pedro\OneDrive - Complexo de Ensino Superior do Brasil LTDA\Programacao\Avaliações\2Bim\Trabalho2Bim\Trabalho2Bim\obj\Debug\Trabalho2Bim.csproj.CoreCompileInputs.cache
+C:\Users\pedro\OneDrive - Complexo de Ensino Superior do Brasil LTDA\Programacao\Avaliações\2Bim\Trabalho2Bim\Trabalho2Bim\obj\Debug\Trabalho2Bim.exe
+C:\Users\pedro\OneDrive - Complexo de Ensino Superior do Brasil LTDA\Programacao\Avaliações\2Bim\Trabalho2Bim\Trabalho2Bim\obj\Debug\Trabalho2Bim.pdb
