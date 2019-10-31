@@ -43,5 +43,6 @@ namespace Trabalho2Bim
             dgNf.DataSource = null;
             dgNf.DataSource = listNf;
         }
+        //COMI TEU CU NA BOSTA
     }
 }
