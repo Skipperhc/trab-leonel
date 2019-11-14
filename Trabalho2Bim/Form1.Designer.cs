@@ -32,8 +32,6 @@
             this.txtNomeProd = new System.Windows.Forms.TextBox();
             this.txtQuantidade = new System.Windows.Forms.TextBox();
             this.txtPreco = new System.Windows.Forms.TextBox();
-            this.txtTotal = new System.Windows.Forms.TextBox();
-            this.txtRegiao = new System.Windows.Forms.TextBox();
             this.txtVendedor = new System.Windows.Forms.TextBox();
             this.txtCliente = new System.Windows.Forms.TextBox();
             this.txtFornecedor = new System.Windows.Forms.TextBox();
@@ -48,7 +46,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.cbxRegiao = new System.Windows.Forms.ComboBox();
+            this.btnVendasTot = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgNf)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,20 +79,6 @@
             this.txtPreco.Size = new System.Drawing.Size(100, 20);
             this.txtPreco.TabIndex = 3;
             // 
-            // txtTotal
-            // 
-            this.txtTotal.Location = new System.Drawing.Point(462, 44);
-            this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(100, 20);
-            this.txtTotal.TabIndex = 4;
-            // 
-            // txtRegiao
-            // 
-            this.txtRegiao.Location = new System.Drawing.Point(272, 177);
-            this.txtRegiao.Name = "txtRegiao";
-            this.txtRegiao.Size = new System.Drawing.Size(100, 20);
-            this.txtRegiao.TabIndex = 5;
-            // 
             // txtVendedor
             // 
             this.txtVendedor.Location = new System.Drawing.Point(272, 44);
@@ -117,11 +102,11 @@
             // 
             // btnGravar
             // 
-            this.btnGravar.Location = new System.Drawing.Point(462, 177);
+            this.btnGravar.Location = new System.Drawing.Point(272, 218);
             this.btnGravar.Name = "btnGravar";
             this.btnGravar.Size = new System.Drawing.Size(100, 24);
             this.btnGravar.TabIndex = 9;
-            this.btnGravar.Text = "button1";
+            this.btnGravar.Text = "Gravar";
             this.btnGravar.UseVisualStyleBackColor = true;
             this.btnGravar.Click += new System.EventHandler(this.btnGravar_Click);
             // 
@@ -139,7 +124,7 @@
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(100, 23);
             this.btnListar.TabIndex = 11;
-            this.btnListar.Text = "button1";
+            this.btnListar.Text = "Listar";
             this.btnListar.UseVisualStyleBackColor = true;
             this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
@@ -215,21 +200,37 @@
             this.label8.TabIndex = 19;
             this.label8.Text = "Regiao";
             // 
-            // label9
+            // cbxRegiao
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(459, 28);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(31, 13);
-            this.label9.TabIndex = 20;
-            this.label9.Text = "Total";
+            this.cbxRegiao.FormattingEnabled = true;
+            this.cbxRegiao.Items.AddRange(new object[] {
+            "Sul",
+            "Norte",
+            "Sudeste",
+            "Centro Oeste",
+            "Nordeste"});
+            this.cbxRegiao.Location = new System.Drawing.Point(272, 175);
+            this.cbxRegiao.Name = "cbxRegiao";
+            this.cbxRegiao.Size = new System.Drawing.Size(100, 21);
+            this.cbxRegiao.TabIndex = 23;
+            // 
+            // btnVendasTot
+            // 
+            this.btnVendasTot.Location = new System.Drawing.Point(420, 35);
+            this.btnVendasTot.Name = "btnVendasTot";
+            this.btnVendasTot.Size = new System.Drawing.Size(89, 37);
+            this.btnVendasTot.TabIndex = 25;
+            this.btnVendasTot.Text = "Vendas Totais";
+            this.btnVendasTot.UseVisualStyleBackColor = true;
+            this.btnVendasTot.Click += new System.EventHandler(this.btnVendasTot_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label9);
+            this.Controls.Add(this.btnVendasTot);
+            this.Controls.Add(this.cbxRegiao);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -244,8 +245,6 @@
             this.Controls.Add(this.txtFornecedor);
             this.Controls.Add(this.txtCliente);
             this.Controls.Add(this.txtVendedor);
-            this.Controls.Add(this.txtRegiao);
-            this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.txtPreco);
             this.Controls.Add(this.txtQuantidade);
             this.Controls.Add(this.txtNomeProd);
@@ -264,8 +263,6 @@
         private System.Windows.Forms.TextBox txtNomeProd;
         private System.Windows.Forms.TextBox txtQuantidade;
         private System.Windows.Forms.TextBox txtPreco;
-        private System.Windows.Forms.TextBox txtTotal;
-        private System.Windows.Forms.TextBox txtRegiao;
         private System.Windows.Forms.TextBox txtVendedor;
         private System.Windows.Forms.TextBox txtCliente;
         private System.Windows.Forms.TextBox txtFornecedor;
@@ -280,7 +277,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox cbxRegiao;
+        private System.Windows.Forms.Button btnVendasTot;
     }
 }
 

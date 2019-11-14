@@ -17,9 +17,6 @@ namespace Trabalho2Bim
             InitializeComponent();
         }
 
-
-        List<NF> listNf = new List<NF>();
-
         private void btnGravar_Click(object sender, EventArgs e)
         {
             NF nf = new NF();
@@ -30,19 +27,25 @@ namespace Trabalho2Bim
             nf.qntVendida = Convert.ToInt32(txtQuantidade.Text);
             nf.cliente = txtCliente.Text;
             nf.vendedor = txtVendedor.Text;
-            nf.regiao = txtRegiao.Text;
+            nf.regiao = cbxRegiao.Text;
             nf.totalItem += nf.precoUnit;
-            txtTotal.Text = nf.totalItem.ToString();
             nf.fornecedor = txtFornecedor.Text;
 
-            listNf.Add(nf);
+            nf.salvarlist();
         }
 
         private void btnListar_Click(object sender, EventArgs e)
         {
+            NF nf = new NF();
             dgNf.DataSource = null;
-            dgNf.DataSource = listNf;
+            dgNf.DataSource = nf.lista();
         }
-        //COMI TEU CU NA BOSTA
+
+        private void btnVendasTot_Click(object sender, EventArgs e)
+        {
+            printVendedor pVend = new printVendedor();
+            pVend.Show();
+            this.Hide();
+        }
     }
 }
