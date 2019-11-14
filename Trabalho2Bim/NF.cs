@@ -4,11 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Trabalho2Bim
-{
-    class NF
-    {
-        NF nf = new NF();
+namespace Trabalho2Bim {
+    class NF {
         public int numNf { get; set; }
         public string nomeProd { get; set; }
         public int qntVendida { get; set; }
@@ -21,13 +18,13 @@ namespace Trabalho2Bim
 
         List<NF> listNf = new List<NF>();
 
-        public List<NF> lista()
-        {
+        
+        public List<NF> lista() {
             return listNf;
         }
 
-        public void salvarlist()
-        {
+        public void salvarlist() {
+            NF nf = new NF();
             listNf.Add(nf);
         }
     }
